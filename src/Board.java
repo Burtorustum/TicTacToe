@@ -4,7 +4,8 @@ public class Board
      * Declarations
      */
 
-    private char[][] boardState;
+    private enum State {Blank, X, O};
+    private State[][] boardState;
 
     /**
      * Constructor(s)
@@ -13,7 +14,7 @@ public class Board
     //Default
     public Board()
     {
-        boardState = new char[3][3];
+        boardState = new State[3][3];
     }
 
     /**
@@ -22,10 +23,10 @@ public class Board
 
     public void initialize()
     {
-        
+
     }
 
-    public void placePiece(int xCoord, int yCoord, char piece)
+    public void placePiece(int xCoord, int yCoord, State piece)
     {
         boardState[xCoord][yCoord] = piece;
     }
@@ -41,7 +42,8 @@ public class Board
      * |-----------------|
      */
 
-    public char[][] getBoardState() {
+    public State[][] getBoardState()
+    {
         return boardState;
     }
 }
