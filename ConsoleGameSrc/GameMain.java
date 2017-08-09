@@ -17,6 +17,7 @@ public class GameMain
         do
         {
             playerMove(currentPlayer);
+            System.out.println();
             board.paint();
             updateGame(currentPlayer);
 
@@ -52,11 +53,11 @@ public class GameMain
         {
             if (theState == CellState.X)
             {
-                System.out.println("X please input a move. (row[1-3] column[1-3]):");
+                System.out.println("\nX please input a move. (row[1-3] column[1-3]):");
             }
             else
             {
-                System.out.println("O please input a move. (row[1-3] column[1-3]):");
+                System.out.println("\nO please input a move. (row[1-3] column[1-3]):");
             }
             int row = reader.nextInt() - 1;
             int col = reader.nextInt() - 1;
@@ -90,6 +91,12 @@ public class GameMain
 
     public static void main(String [] args)
     {
-        new GameMain();
+        do {
+            new GameMain();
+            System.out.println("Play again? y/n:");
+        }
+        while (reader.next().equals("y"));
+
+        System.out.println("Thanks for playing! :>");
     }
 }
