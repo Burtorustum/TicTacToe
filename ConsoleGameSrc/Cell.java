@@ -12,14 +12,14 @@ public class Cell
 
     public void clear()
     {
-        content = CellState.Empty;
+        content = CellState.EMPTY;
     }
 
     public void paint()
     {
         switch (content)
         {
-            case Empty:
+            case EMPTY:
                 System.out.print("   ");
                 break;
 
@@ -36,5 +36,9 @@ public class Cell
     public CellState getContent()
     {
         return content;
+    }
+    public void setContent(CellState in)
+    {
+        content = in;
     }
 }
