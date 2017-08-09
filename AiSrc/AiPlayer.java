@@ -12,7 +12,7 @@ public abstract class AiPlayer
         cells = board.cells;
     }
 
-    public void setMyState(CellState state)
+    public void setState(CellState state)
     {
         this.myState = state;
         oppState = (myState == CellState.X) ? CellState.O : CellState.X;
