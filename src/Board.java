@@ -20,9 +20,14 @@ public class Board
      * Functions
      */
 
-    public void placePiece(int xCoord, int yCoord)
+    public void initialize()
     {
+        
+    }
 
+    public void placePiece(int xCoord, int yCoord, char piece)
+    {
+        boardState[xCoord][yCoord] = piece;
     }
 
     /**
