@@ -31,6 +31,10 @@ public class Cell
                 System.out.print(" X ");
                 break;
         }
+    }
 
+    public CellState getContent()
+    {
+        return content;
     }
 }

@@ -5,5 +5,3 @@ public class User
 
     }
 }
-/* if (boardState[1][1]== '\u0000') //The null representation in char
-            System.out.println("hi");*/
