@@ -16,7 +16,7 @@ public class HeuristicPreferences extends AiPlayer
                 return move;
             }
         }
-        assert false : "Bug! No empty cells???";
+        assert false : "Bug! No empty cells???"; //Should NEVER trigger -- purely for bug catching
         return null;
     }
 
