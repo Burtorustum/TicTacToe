@@ -1,2 +1,4 @@
-public class MinMax extends AiPlayer {
+public class MinMax extends AiPlayer
+{
+
 }
